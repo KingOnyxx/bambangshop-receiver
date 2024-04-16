@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Commit: `Implement receive_notification function in Notification service.`
+    -   [x] Commit: `Implement receive function in Notification controller.`
+    -   [x] Commit: `Implement list_messages function in Notification service.`
+    -   [x] Commit: `Implement list function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -89,3 +89,6 @@ This is the place for you to write reflections:
 Mutex<> allows only one thread to access the data at a time, whether for reading or writing, which can be more restrictive.
 2. The lazy_static library provides a way to define static variables that are initialized in a thread-safe manner, allowing for safe mutable access if wrapped in synchronization primitives like Mutex<> or RwLock<>. Rust’s approach differs from Java’s to maintain thread safety and prevent data races.
 #### Reflection Subscriber-2
+1. `lib.rs` contains several structures and functions related to application configuration and error handling, which can be used by other parts of the application or other applications that depend on this library.
+2. Yes, because the code was designed to be modular and reusable, so spawning more than one instance of the receiver is possible. This is useful for scaling the application to handle more requests and distribute the load across multiple instances.
+3. Postman is very useful for testing REST APIs because it allows you to send requests to the server and inspect the responses, making it easier to debug and develop the application. It also provides a way to automate testing and create collections of requests that can be shared with others.
